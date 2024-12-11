@@ -1,0 +1,277 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+/* Banner styling */
+
+.banner {
+  display: flex;
+  justify-content: space-between; /* Space out logo, search, and actions */
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  position: fixed; /* Fix the banner at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Background color for visibility */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.app-name {
+  font-size: 28px;
+  color: #FF4500; /* Reddit-like color */
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.app-name:hover {
+  cursor: pointer;
+}
+
+.search-box {
+  max-width: 600px;
+  width: 100%; /* Make it responsive */
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  flex-grow: 1; /* Grow to fill space */
+  margin: 0 20px; /* Add spacing around the search bar */
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #FF4500; /* Focus color */
+}
+
+.search-box:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+.user-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center; /* Align buttons vertically */
+}
+
+.create-post-btn {
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.create-post-btn:hover {
+  background-color: #FF4500; /* Hover color */
+}
+
+.create-post-btn.create-post-active {
+  background-color: #FF4500;
+}
+.user-profile-btn {
+  background: none;
+  border: none;
+  color: #0079d3;
+  cursor: pointer;
+  padding: 0;
+  font-size: inherit;
+}
+
+.user-profile-btn:hover {
+  color: #005bb5;
+}
+
+.user-profile-btn:disabled {
+  cursor: not-allowed;
+}
+
+.login-btn,
+.logout-btn {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #0079d3;
+  color: white;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.login-btn:hover,
+.logout-btn:hover {
+  background-color: #005bb5;
+}
+
+.create-post-btn.disabled-btn {
+    background-color: lightgray;
+    color: darkgray;
+    cursor: not-allowed;
+}
+
+.create-post-btn.disabled-btn:hover {
+    background-color: lightgray; /* No hover effect when disabled */
+}
+
+.create-post-btn.create-post-active {
+    background-color: #ff4500;
+}
+
+
+/* Nav Bar */
+.nav-bar {
+  padding: 20px;
+  width: 250px;
+  height: 100vh; /* Full viewport height */
+  border-right: 1px solid black; /* Vertical black line delimiter */
+  position: fixed; /* Fix the nav-bar on the left */
+  top: 60px; /* Adjust this value to match the height of the banner */
+  left: 0;
+  background-color: white; /* Background color */
+  z-index: 900; /* Below the banner but above content */
+  overflow-y: auto; /* Enable scroll within the NavBar if content overflows */
+}
+
+.nav-link {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  background-color: lightgrey;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.home-active {
+  background-color: #FF4500; /* Phreddit reddish-orange for Home */
+  color: white;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #FF4500; /* Hover effect */
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.create-community-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.create-community-btn:hover {
+  background-color: #FF4500; /* Hover effect for Create Community */
+  transition: 0.3s ease;
+}
+
+.communities-header {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.community-list {
+  list-style: none;
+  padding: 0;
+}
+
+.community-link {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  background-color: lightgrey;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.community-link:hover {
+  background-color: #FF4500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.community-active {
+  background-color: #FF4500;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.communities-section {
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+
+.main-content {
+  margin-top: 60px; /* Adjust for banner height */
+  margin-left: 290px; /* Adjust for nav-bar width */
+  padding: 20px;
+}
+
+.create-community-btn.disabled-btn {
+  background-color: lightgray;
+  color: darkgray;
+  cursor: not-allowed;
+}
+
+.create-community-btn.disabled-btn:hover {
+  background-color: lightgray; /* No hover effect when disabled */
+}
+
+.create-community-btn.active {
+  background-color: #e03e00;
+  color: white;
+}

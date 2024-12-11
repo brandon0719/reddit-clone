@@ -1,0 +1,121 @@
+.post-page {
+    padding: 20px;
+}
+
+.post-header {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.post-community {
+    margin: 0;
+    color: black;
+}
+
+.post-header p {
+    color: grey;
+    margin: 10px 0;
+}
+
+.post-title {
+    color: #FF4500;
+    font-size: 28px;
+}
+
+#post-content {
+    color: black;
+    font-size: 16px;
+}
+
+.link-flair {
+    font-weight: bold;
+    color: #FF4500;
+}
+
+.vote-section {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.vote-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px; 
+    color: black;
+}
+
+.vote-btn.active {
+    color: #ff4500; /* Highlight active button (upvote color) */
+    font-weight: bold; /* Make the active button stand out */
+}
+
+.vote-btn:disabled {
+    cursor: not-allowed;
+    color: gray;
+    opacity: 0.6;
+}
+
+.vote-count {
+    margin: 0 5px; 
+    font-size: 14px; 
+    font-weight: bold;
+    color: #FF4500;
+}
+
+.post-stats {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    font-size: 14px; 
+    margin-bottom: 10px;
+}
+
+.post {
+    padding: 15px;
+    margin: 0;
+}
+
+.post:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comment-content {
+    margin-top: 10px;
+    padding-left: 10px;
+    position: relative;
+    border-left: 2px solid #ccc;
+}
+
+.comment-header {
+    font-size: 14px;
+    color: grey;
+}
+
+.comment-replies {
+    margin-left: 20px;
+}
+
+.comment-btn {
+    border-radius: 10px;
+    padding: 7px;
+    cursor: pointer;
+    margin: 5px;
+    border-color: #ccc;
+}
+.comment-btn:disabled {
+    background-color: gray;
+    color: #f0f0f0;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.comment-btn:hover {
+    background-color: #ccc;
+}

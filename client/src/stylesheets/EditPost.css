@@ -1,0 +1,135 @@
+/* Container for the Edit Post Page */
+.edit-post-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Account for banner/navbar height */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+}
+
+/* Card container */
+.card {
+    background-color: #fff; /* Card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px 30px;
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+/* Title of the card */
+.card-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Form container inside the card */
+.card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each form group (label + input) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels for form fields */
+.form-label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Input fields */
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+/* Read-only inputs */
+.form-input[readonly] {
+    background-color: #f9f9f9;
+    color: #777;
+}
+
+/* Focus state for inputs */
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    border-color: #FF4500; /* Phreddit reddish-orange */
+    outline: none;
+}
+
+/* Input error state */
+.input-error {
+    border-color: #ff4d4d;
+}
+
+/* Error message below the input */
+.error-text {
+    font-size: 14px;
+    color: #ff4d4d;
+    margin-top: -5px;
+}
+
+/* Textarea specific styling */
+.form-textarea {
+    height: 100px;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px;
+    max-height: 300px;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #FF4500; 
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-btn:hover {
+    background-color: #cc3700;
+}
+
+/* Cancel button */
+.cancel-btn {
+    background-color: grey; 
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Cancel button hover effect */
+.cancel-btn:hover {
+    background-color: #333;
+}

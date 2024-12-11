@@ -1,0 +1,106 @@
+/* Container for the New Comment Page */
+.new-comment-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Adjust height to account for navbar/banner */
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form Card */
+.comment-form {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Responsive width */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds spacing between form elements */
+}
+
+/* Page Title */
+.page-title {
+    font-size: 24px;
+    color: #FF4500; /* Phreddit reddish-orange */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Each form group (label + input) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels for form fields */
+.form-label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Input fields for content */
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+/* Focus state for inputs */
+.form-textarea:focus {
+    border-color: #FF4500; /* Phreddit reddish-orange */
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 69, 0, 0.4);
+}
+
+/* Input error state */
+.input-error {
+    border-color: #ff4d4d;
+}
+
+/* Error message below the input */
+.error-text {
+    font-size: 14px;
+    color: #ff4d4d;
+    margin-top: 5px;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #FF4500;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Hover and active state */
+.submit-btn:hover {
+    background-color: #e03e00;
+    transform: translateY(-1px);
+}
+
+.submit-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,99 @@
+.edit-community {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Account for banner/navbar height */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+}
+
+.edit-community form {
+    background: #ffffff; /* Card background */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Restrict card width */
+    width: 100%;
+}
+
+.edit-community h2 {
+    color: #FF4500; /* Phreddit reddish-orange */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.edit-community label {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.edit-community input,
+.edit-community textarea {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-community input:focus,
+.edit-community textarea:focus {
+    border-color: #FF4500; /* Phreddit reddish-orange */
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 69, 0, 0.4);
+}
+
+.edit-community textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px;
+    max-height: 300px;
+}
+
+.edit-community button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF4500; /* Phreddit reddish-orange */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Buttons take full width */
+}
+
+.edit-community button:hover {
+    background-color: #e03e00;
+    transform: translateY(-2px);
+}
+
+.edit-community button:active {
+    color: #e03e00;
+    transform: translateY(1px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.edit-community button:nth-child(2) {
+    background-color: grey; /* Cancel button color */
+    margin-top: 10px;
+}
+
+.edit-community button:nth-child(2):hover {
+    background-color: #333;
+}
+
+.edit-community .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}

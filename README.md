@@ -1,2 +1,0 @@
-# reddit-clone
-Reddit Clone

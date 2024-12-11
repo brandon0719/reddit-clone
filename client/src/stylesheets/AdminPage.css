@@ -1,0 +1,128 @@
+.admin-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.profile-header p {
+    margin: 5px 0;
+    color: gray;
+}
+
+.admin-btns{
+    margin-top: 5px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.admin-btns button {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: grey;
+    color: white;
+}
+
+.admin-btns button.active {
+    background-color: #ff4500;
+    color: white;
+    font-weight: bold;
+}
+
+.admin-btns button:hover {
+    background-color: #e94e00;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-list, .community-list, .post-list, .comment-list {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.user-item, .community-item, .post-item, .comment-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.user-item:hover, .community-item:hover, .post-item:hover, .comment-item:hover {
+    background-color: #f0f0f0;
+}
+
+.user-item p, .community-item p, .post-item p, .comment-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.user-item strong, .community-item strong, .post-item strong, .comment-item strong {
+    color: #0079d3;
+}
+
+.user-item .delete-button,
+.community-item .delete-button,
+.post-item .delete-button,
+.comment-item .delete-button {
+    background-color: grey;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 50px;
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+}
+
+.user-item .delete-button:hover,
+.community-item .delete-button:hover,
+.post-item .delete-button:hover,
+.comment-item .delete-button:hover {
+    background-color: red;
+}
+
+.user-item .view-button,
+.community-item .edit-button,
+.post-item .edit-button,
+.comment-item .edit-button {
+    background-color: #ff4500;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 50px;
+}
+
+.user-item .view-button:hover,
+.community-item .edit-button:hover,
+.post-item .edit-button:hover,
+.comment-item .edit-button:hover {
+    background-color: #e63900;
+}

@@ -1,0 +1,140 @@
+/* Edit Post Page Container */
+.edit-post-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Adjust for header/navbar */
+    background-color: #f5f5f5; /* Light background */
+    padding: 20px;
+}
+
+/* Card Container */
+.card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; /* Inner padding */
+    max-width: 600px; /* Limit card width */
+    width: 100%; /* Full width responsiveness */
+    border: 1px solid #e0e0e0; /* Light border */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 24px; /* Larger title text */
+    color: #333333; /* Dark gray */
+    margin-bottom: 20px; /* Space below title */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center-align text */
+}
+
+/* Form Styles */
+.card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between form elements */
+}
+
+/* Form Group (Label + Input/Select/Textarea) */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+.form-label {
+    font-size: 16px;
+    margin-bottom: 8px; /* Space below label */
+    color: #555555; /* Slightly lighter gray for labels */
+    font-weight: bold;
+}
+
+/* Input, Textarea, and Select Styling */
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: 12px; /* Comfortable padding */
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 6px; /* Rounded edges */
+    font-size: 16px; /* Consistent font size */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth focus effects */
+}
+
+/* Read-only Input Styling */
+.form-input[readonly] {
+    background-color: #f9f9f9; /* Subtle background for read-only fields */
+    color: #777777; /* Lighter text color */
+}
+
+/* Focus State for Inputs */
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    border-color: #FF4500; /* Highlight border with Phreddit orange */
+    box-shadow: 0 0 6px rgba(255, 69, 0, 0.2); /* Subtle shadow effect */
+    outline: none; /* Remove default outline */
+}
+
+/* Textarea Specific Styling */
+.form-textarea {
+    min-height: 120px; /* Minimum height */
+    max-height: 300px; /* Maximum height */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Error Styling */
+.input-error {
+    border-color: #ff4d4d; /* Red border for errors */
+}
+
+.error-text {
+    font-size: 14px;
+    color: #ff4d4d; /* Error message color */
+    margin-top: -5px; /* Adjust spacing */
+}
+
+/* Buttons */
+.submit-btn,
+.cancel-btn {
+    padding: 12px 20px; /* Button padding */
+    font-size: 16px; /* Consistent font size */
+    border: none; /* Remove default borders */
+    border-radius: 6px; /* Rounded edges */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+    text-align: center; /* Center text */
+    width: 100%; /* Full-width buttons */
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #FF4500; /* Phreddit reddish-orange */
+    color: white; /* White text */
+}
+
+.submit-btn:hover {
+    background-color: #e03e00; /* Darker orange on hover */
+    transform: translateY(-2px); /* Slight hover lift */
+}
+
+.submit-btn:active {
+    transform: translateY(1px); /* Slight press down effect */
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background-color: #666666; /* Neutral gray */
+    color: white; /* White text */
+    margin-top: 10px; /* Space above cancel button */
+}
+
+.cancel-btn:hover {
+    background-color: #444444; /* Darker gray on hover */
+}
+
+.cancel-btn:active {
+    transform: translateY(1px); /* Slight press down effect */
+}

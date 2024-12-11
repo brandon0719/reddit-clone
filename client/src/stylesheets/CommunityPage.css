@@ -1,0 +1,134 @@
+.community-page {
+    padding: 20px;
+}
+
+.community-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#community-title {
+    color: #ff4500;
+    font-size: 32px;
+    margin: 0;
+}
+
+#community-description {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.community-header-btn-title {
+    display: flex;
+    align-items: center;
+}
+
+.sort-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.sort-buttons button {
+    padding: 5px 10px;
+    border: none;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+.sort-buttons button:hover {
+    background-color: #ff4500; /* Hover effect */
+}
+
+.sort-buttons .active {
+    background-color: #ff4500;
+}
+
+.information-section {
+    padding-bottom: 10px; 
+}
+
+.post-list {
+    margin-top: 20px;
+}
+
+.post-header {
+    font-size: 14px;
+    color: grey;
+}
+
+.link-flair {
+    color: #555;
+    font-weight: bold;
+}
+
+.post h3 {
+    margin: 10px 0;
+}
+
+.post-stats {
+    font-size: 12px;
+    color: grey;
+}
+
+.information-section {
+    flex-grow: 1; /* Allows the information section to take up available space */
+}
+
+.membership-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.join-community-btn,
+.leave-community-btn {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.join-community-btn {
+    background-color: #0079d3;
+    color: white;
+}
+
+.join-community-btn:hover {
+    background-color: #005bb5;
+}
+
+.leave-community-btn {
+    background-color: red;
+    color: white;
+}
+
+.leave-community-btn:hover {
+    background-color: darkred;
+}
+
+.sort-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.sort-buttons button {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: grey;
+    color: white;
+}
+
+.sort-buttons button.active {
+    background-color: #ff4500;
+    color: white;
+}
+
+.sort-buttons button:hover {
+    background-color: #e94e00;
+}
