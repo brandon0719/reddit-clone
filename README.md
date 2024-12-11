@@ -81,6 +81,7 @@ A full-stack web application that replicates core features of Reddit, allowing u
 
 ## Live Demo
 
+https://github.com/user-attachments/assets/47b485fb-aa3e-4113-b1d9-d96bc47a7617
 
 
 ## UML
