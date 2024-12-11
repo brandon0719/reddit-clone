@@ -79,5 +79,17 @@ A full-stack web application that replicates core features of Reddit, allowing u
 5. **Reputation System**:
    - Gain or lose reputation based on votes you receive on posts and comments.
 
+## Live Demo
+
+
+
 ## UML
+<img width="1603" alt="clientUML" src="https://github.com/user-attachments/assets/efc2442b-37f9-409f-810d-774eddf448e8">
+
+![databaseUML](https://github.com/user-attachments/assets/5edc369d-0a51-4883-b3a6-5cbcf3c67e4c)
+
+![serverUML](https://github.com/user-attachments/assets/d1708c64-d72b-4063-9c44-f1cdbb5e04fd)
+
+
+
 
